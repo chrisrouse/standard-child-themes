@@ -1,0 +1,412 @@
+/*
+Theme Name: Black & Blue
+Theme URI: https://github.com/eightbit/standard-child-theme-kit
+Version: 1.0
+Description: Black & Blue for Standard 3.
+Author: Chris Rouse
+Author URI: http://www.chrisrouse.us/
+Author Email: contact@chrisrouse.us
+License: GNU General Public License v3.0 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: standard
+*/
+
+
+/* Import Standard Styles---------------------------------------------------------------------------------- */
+
+@import url( '../standard/style.css' );
+@import url( '../../standard/style.css' );
+
+
+/* Customizations---------------------------------------------------------------------------------- */
+
+
+/* Page stuff---------------------------------------------- */
+
+body, p, input, button, select, textarea {
+    font-family: "Droid Sans", sans-serif;
+}
+
+body {
+    margin-top: -3px !important;
+    min-height: 100% !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#060606), color-stop(100%,#252a30)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #060606 0%,#252a30 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #060606 0%,#252a30 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #060606 0%,#252a30 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom, #060606 0%,#252a30 100%) !important; /* W3C */
+    background-color: #252a30 !important;
+    background-image: -moz-linear-gradient(center top, #060606 0%, #252a30 100%) !important; /* Firefox 3.6+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060606', endColorstr='#252a30',GradientType=0 ) !important; /* IE6-9 */
+}
+
+html {
+    background-color: #252a30;
+}
+
+.admin-bar #menu-above-header {
+    top: 28px;
+}
+
+
+/* Nav bar (Only works right if you use Top Menu.)---------------------------------------------- */
+
+#menu-above-header {
+    position: fixed;
+}
+
+.nav {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navbar .nav > li > a {
+    color: #303030;
+}
+
+.navbar .nav > li > a:hover {
+    color: #FFFFFF;
+}
+
+.navbar .nav > li > a:active {
+    background-color: #33b5e5;
+    color: #FFFFFF;
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover, .navbar .nav .current-menu-item > a, .navbar .nav .current-menu-item > a:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.navbar-inner {
+    border-bottom: none;
+    background: #33B5E5;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+
+.navbar .dropdown-menu:after, .navbar .dropdown-menu:before {
+    top: -6px;
+    left: 0px;
+}
+
+.navbar .dropdown-menu {
+    top: 38px;
+}
+
+.dropdown-menu {
+    border-style: none;
+    background-color: #191A1A;
+}
+
+.navbar .dropdown-menu a {
+    border: none;
+}
+
+.navbar .dropdown-menu > li a, .navbar .dropdown-menu > li a {
+    color: #ADAFAE;
+}
+
+.navbar .dropdown-menu > li a:hover, .navbar .dropdown-menu > li.active a:hover {
+    background: #33B5E5 !important;
+    color: #ffffff !important;
+}
+
+
+/* Page title and description---------------------------------------------- */
+
+#header {
+    margin-top: 40px;
+}
+
+#site-title a {
+    float: left;
+    margin-bottom: 9px;
+    background: none;
+    color: #ffffff;
+    letter-spacing: -1px;
+    font-size: 54px;
+    line-height: 1;
+}
+
+#site-description {
+    font-size: 21px;
+    line-height: 30px;
+}
+
+
+/* Breadcrumbs and Posts---------------------------------------------- */
+
+.breadcrumb li > a {
+    color: #33B5E5;
+    text-shadow: none;
+}
+
+.title-wrap {
+    margin-left: -12px;
+    padding-left: 7px;
+    border-left: 5px solid #33B5E5;
+}
+
+.post-header, .post-meta {
+    border-color: #303030;
+}
+
+.post, #comments, #pings, #no-comments, #respond {
+   border-top: 1px solid #353535;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Footer and Sub-floor (stuff at the bottom of the page)---------------------------------------------- */
+
+#footer {
+    background: transparent;
+}
+
+#footer-widgets .widget h4.widget-title {
+    border-bottom: 1px solid #33B5E5;
+}
+
+.widget h4.widget-title {
+    border-bottom: 1px solid #33B5E5;
+}
+
+#footer a {
+    color: #ADAFAE !important;
+    text-shadow: none !important;
+}
+
+#footer a:hover {
+    color:  #ffffff !important;
+}
+
+#sub-floor {
+    padding: 0;
+    background: none repeat scroll 0 0 #252A30;
+}
+
+#sub-floor #credit {
+    padding-top: 5px;
+    border-top: 1px solid #33B5E5;
+    color: #ADAFAE;
+    text-align: center;
+}
+
+#sub-floor #credit a {
+    color: #33B5E5 !important;
+}
+
+#sub-floor #credit a:hover {
+    background: #33B5E5 !important;
+    color: #ffffff !important;
+}
+
+
+/* General link settings---------------------------------------------- */
+
+a {
+    color: #33B5E5;
+    text-shadow: none !important;
+}
+
+a:hover {
+    background: #33B5E5;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+
+/* Post Titles---------------------------------------------- */
+
+.post-title a, .post-title a:hover {
+    background: none !important;
+    color: #ffffff !important;
+}
+
+.post-title {
+    color: #ffffff;
+}
+
+.post-link:hover {
+    background: none !important;
+}
+
+
+/* Author Box---------------------------------------------- */
+
+#author-box .author-link:hover {
+    background: none !important;
+    background-image: url(../standard/css/../images/icn-author-sprites-white.png) !important;
+	background-repeat: no-repeat !important;
+	color:  #ffffff;
+    opacity: 1;
+}
+
+
+/* Comment Section---------------------------------------------- */
+
+#no-comments .title, #commentform label {
+    color: #ffffff;
+}
+
+#commentform #comment-form-avatar {
+    margin-right: 10px;
+}
+
+#commentform input[type="text"] {
+    color: #ADAFAE;
+}
+
+#commentform textarea {
+    background: none repeat scroll 0 0 #222222;
+    border: 1px solid #353535;
+    color: #ADAFAE;
+}
+
+/* Sidebar and Sidebar Widgets---------------------------------------------- */
+
+.widget h4.widget-title {
+    border-bottom: 1px solid #33B5E5;
+}
+
+#sidebar a {
+    color: #ADAFAE !important;
+    text-shadow: none !important;
+}
+
+#sidebar a:hover {
+    color:  #ffffff !important;
+}
+
+
+/* Search---------------------------------------------- */
+
+/* search focus */
+#searchform #s:focus {
+	border-color: #FF0000;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0000;
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0000;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0000;
+}
+
+/* placeholder text */
+#searchform #s::-webkit-input-placeholder {
+   color: #999999;
+}
+#searchform #s:-moz-placeholder {
+   color: #999999;
+}
+
+input {
+    border: 1px solid #353535;
+    border-radius: 0;
+    background: #222222;
+}
+
+
+/* Dropdown Select Box---------------------------------------------- */
+
+select {
+    width: 98%;
+    border: 1px solid #353535;
+    border-radius: 0;
+    background: #222222;
+    background-color: #FFFFFF;
+    color: #999999;
+}
+
+
+/* Activity Tabs---------------------------------------------- */
+
+.tabbed-widget .nav-tabs > li> a:hover {
+    border-bottom: none !important;
+    background: #2c2c2c !important;
+}
+
+.tabbed-widget .tab-content {
+    border-color: #222222 !important;
+    border-radius: 0 !important;
+    background: #222222 !important;
+}
+
+.tabbed-widget .nav-tabs > li > a {
+    border-color: #222222 !important;
+    background-image: none !important;
+    color: white !important;
+    font-size: 14px !important;
+}
+
+.tabbed-widget .nav-tabs > li.active > a {
+    border-color: #222222 !important;
+    background: #222222 !important;
+}
+
+.tabbed-widget .tab-content ul > li {
+    border-bottom: 1px solid #33B5E5 !important;
+}
+
+.tabbed-widget .tab-content ul > li:last-child {
+    border-bottom: medium none !important;
+}
+
+
+/* Social Influence---------------------------------------------- */
+
+.si-total {
+    border: 1px solid #2c2c2c !important;
+    background: #2c2c2c !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.si-total-number {
+    color: #E0E0E0 !important;
+}
+.si-individual {
+    border: 1px solid #222222 !important;
+    background: none repeat scroll 0 0 #222222 !important;
+}
+
+
+/* Jetpack Widgets---------------------------------------------- */
+
+.jetpack_subscription_widget {
+    background: none repeat scroll 0 0 #222222;
+}
+
+.jetpack_subscription_widget label {
+    color: #ffffff;
+}
+
+.jetpack_subscription_widget input[type="text"] {
+    color: #ADAFAE;
+}
+
+
+/* Media Queries---------------------------------------------------------------------------------- */
+
+/* Smartphones */
+@media (max-width: 480px) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 979px) {
+
+}
+
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Desktop */
+@media (min-width: 980px) {
+
+}
