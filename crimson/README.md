@@ -7,6 +7,7 @@ A child theme designed by Jason Bradley for Standard Theme 3.
 * [Standard Theme](https://www.e-junkie.com/ecom/gb.php?ii=606601&c=ib&aff=141797&cl=64302)
 * [8BIT](http://8bit.io/)
 * [Jason Bradley](http://everchangingmedia.com/)
+* [Live Preview](http://crimson.everchangingmedia.com/)
 
 ### Features
 
