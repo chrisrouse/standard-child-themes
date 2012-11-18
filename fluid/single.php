@@ -11,8 +11,8 @@
 <?php $presentation_options = get_option( 'standard_theme_presentation_options' ); ?>
 
 <div id="wrapper">
-	<div class="container">
-		<div class="row">
+	<div class="container-fluid">
+		<div class="row-fluid">
 
 			<?php if ( 'left_sidebar_layout' == $presentation_options['layout'] && ! get_post_meta( get_the_ID(), 'standard_seo_post_level_layout', true ) ) { ?>
 				<?php get_sidebar(); ?>
@@ -87,7 +87,7 @@
 				<?php get_sidebar(); ?>
 			<?php } // end if ?>
 				
-		</div> <!-- /row -->
-	</div><!-- /container -->
+		</div> <!-- /row-fluid -->
+	</div><!-- /container-fluid -->
 </div> <!-- /#wrapper -->
 <?php get_footer(); ?>
