@@ -13,7 +13,7 @@
 
 <div id="wrapper">
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row-fluid">
 
 				<?php if ( 'left_sidebar_layout' == $presentation_options['layout'] ) { ?>
 					<?php get_sidebar(); ?>
