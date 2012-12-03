@@ -15,7 +15,11 @@ function update_bootstrap() {
 	wp_dequeue_script( 'bootstrap' );
 	wp_register_script( 'bootstrap-two', get_stylesheet_directory_uri() . '/js/lib/bootstrap.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'bootstrap-two' );
-	
+
+	wp_register_style( 'font-awesome-ie', get_stylesheet_directory_uri() . '/css/lib/font-awesome-ie7.css' );
+    $GLOBALS['wp_styles']->add_data( 'font-awesome-ie', 'conditional', 'lt IE 8' );
+    wp_enqueue_style( 'font-awesome-ie' );
+    	
 	wp_enqueue_style( 'standard' );
 	
 }
@@ -37,7 +41,7 @@ function slug($str) {
 
 /* Collapse: http://twitter.github.com/bootstrap/javascript.html#collapse */
 
-/* [collapse title=null element="h2" open=false][/collapse] */
+/* [collapse title=null element="h2" open=false plusicon=true][/collapse] */
 
 function bs_collapse_func($atts, $content = null) {
 
@@ -45,8 +49,9 @@ function bs_collapse_func($atts, $content = null) {
 		shortcode_atts( 
 			array(
 			'title' => '',
-			'element' => 'h3',
-			'open' => false
+			'element' => 'h2',
+			'open' => false,
+			'plusicon' => true
 			), 
 			$atts
 		)
@@ -54,8 +59,9 @@ function bs_collapse_func($atts, $content = null) {
 	
 	$idnum = rand(1,50);
 	$open == true ? $open = ' in' : $open = '';
+	$plusicon == true ? $plusicon = ' +' : $plusicon = '';
 	
-	$collapse_content = "<" . $element . "><a data-toggle='collapse' data-target='#coll" . $idnum . "' class='pointer'>" . $title . " +</a></" . $element . "><div id='coll" . $idnum . "' class='collapse" . $open . "'>" . $content . "</div>";
+	$collapse_content = "<" . $element . "><a data-toggle='collapse' data-target='#coll" . $idnum . "' class='pointer'>" . $title . $plusicon . "</a></" . $element . "><div id='coll" . $idnum . "' class='collapse" . $open . "'>" . do_shortcode($content) . "</div>";
 
 	return $collapse_content;
 	 

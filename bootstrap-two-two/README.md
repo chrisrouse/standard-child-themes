@@ -1,8 +1,8 @@
-# Bootstrap 2.1 Child Theme for Standard
+# Bootstrap 2.2 Child Theme for Standard
 
 ## Description
 
-Child theme kit using <a href="http://twitter.github.com/bootstrap" target="_blank">Bootstrap 2.1</a> for themes built on <a href="http://standardtheme.com" target="_blank">Standard 3</a>.
+Child theme kit using <a href="http://twitter.github.com/bootstrap" target="_blank">Bootstrap 2.2.1</a> and <a href="http://gregoryloucas.github.com/Font-Awesome-More/" target="_blank">Font Awesome More</a> for themes built on <a href="http://standardtheme.com" target="_blank">Standard 3</a>.
 
 ## Shortcodes
 
@@ -54,8 +54,3 @@ The following shows the available arguments/options along with the default setti
 ### Icon: <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">(Documentation)</a> ###
 
 ```[icon type=null class=null]```
-
-## Changelog
-
-### 1.0
-* Initial release.
