@@ -1,0 +1,274 @@
+@import url('../../standard/style.css');
+/*  
+Theme Name: Standard Twenty Twelve Child Theme
+Theme URI: http://standardtheme.com
+Version: Standard 3.2
+Description: This is a custom child theme for Standard Theme 3.
+Author: Jason Bradley
+Author URI: http://everchangingmedia.com
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: standard
+*/
+/* ------------------------------------------------------------------------ Import Standard Styles */
+/*  
+	Variables
+*/
+/*  
+	Mixins
+*/
+.double-border-bottom {
+  border-bottom: 4px double #EDEDED;
+}
+/* ------------------------------------------------------------------------ Customizations */
+#site {
+  background: white;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: underline;
+  color: #757575;
+}
+a:hover {
+  color: #21759b;
+}
+#hgroup {
+  position: relative;
+  padding: 0px;
+}
+#hgroup P {
+  margin: 10px 0 20px 0;
+}
+#site-title,
+#site-title a {
+  color: #515151;
+}
+#site-title:hover,
+#site-title a:hover {
+  color: #21759b;
+}
+#site-description {
+  color: #757575;
+}
+.navbar-inverse .navbar-inner {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #EDEDED;
+  border-top: 1px solid #EDEDED;
+}
+.navbar .nav > li > a {
+  text-transform: uppercase;
+  color: #757575;
+  font-size: 12px;
+  padding: 11px 20px 10px;
+}
+.navbar .nav > li > a:hover {
+  color: #5E5E5E;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .nav .active > a {
+  font-weight: bold;
+  background: none;
+  color: #515151;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .nav .active > a:hover {
+  background: none;
+  color: #515151;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar-inverse .nav-collapse .nav > li > a:hover,
+.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+  background-color: transparent;
+}
+.breadcrumb {
+  background: none;
+}
+.post,
+#comments,
+#pings,
+#no-comments,
+#respond {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 4px double #EDEDED;
+}
+.post-title a {
+  color: #21759b;
+  font-size: 22px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.post-title a:visited {
+  color: #21759b;
+}
+.post-title a:hover {
+  color: black;
+}
+.post-header {
+  border-bottom: none;
+}
+.post-header .alignleft {
+  float: right;
+}
+.the-comment-link a {
+  text-decoration: underline;
+  color: #757575;
+}
+.the-comment-link a:hover {
+  color: #21759b;
+}
+.post-meta {
+  border-top: none;
+}
+.post.format-link .post-title a {
+  color: #000000;
+}
+.post.format-link .post-title a:hover {
+  color: #21759b;
+}
+.post.format-link .post-header {
+  background: none;
+  background-image: none;
+}
+.post.format-link .post-header .entry-content {
+  background-image: url(../standard/images/icn-link-dark.png);
+}
+.post.format-status .post-header {
+  background: none;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.post.format-quote .post-header {
+  background-color: #D2E0F9;
+}
+.more-link {
+  color: #21759b;
+}
+.more-link:hover {
+  color: #000000;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  border: none;
+  color: #21759b;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.pager li > a:hover,
+.pager li > span:hover {
+  background: none;
+  color: #000000;
+  text-decoration: underline;
+}
+.pager a {
+  color: #21759b;
+}
+.pager a:hover {
+  text-decoration: underline;
+}
+.previous-page a,
+.next-page a {
+  color: #21759b;
+}
+.previous-page a:hover,
+.next-page a:hover {
+  text-decoration: underline;
+}
+#author-box {
+  border-bottom: 4px double #EDEDED;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.well {
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.widget h4.widget-title {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: none;
+  font-size: 12px;
+  line-height: 12px;
+  color: #686868;
+  text-transform: uppercase;
+}
+.widget ul li a:hover {
+  color: #21759b;
+}
+#footer {
+  background: none;
+}
+#footer #sub-floor {
+  background: none;
+}
+#footer #sub-floor #credit {
+  color: #757575;
+}
+#footer #sub-floor #credit a:hover {
+  color: #21759b;
+}
+code {
+  color: #757575;
+  background-color: transparent;
+  border: none;
+}
+/* ------------------------------------------------------------------------ Media Queries */
+/* Smartphones */
+@media (max-width: 480px) {
+  #wrapper .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
+/* Tablet and Mobile */
+@media (max-width: 979px) {
+  #site {
+    margin: 0px auto;
+  }
+  .navbar-inverse .navbar-inner {
+    border-bottom: none;
+    border-top: none;
+  }
+}
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+  #site {
+    margin: 0px auto;
+  }
+}
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+  #site {
+    margin: 0px auto;
+  }
+}
+/* Desktop */
+@media (min-width: 980px) {
+  #site {
+    margin: 40px auto;
+    padding: 40px;
+  }
+}

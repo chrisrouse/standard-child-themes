@@ -1,0 +1,302 @@
+/*  
+Theme Name: Standard Twenty Twelve Child Theme
+Theme URI: http://standardtheme.com
+Version: Standard 3.2
+Description: This is a custom child theme for Standard Theme 3.
+Author: Jason Bradley
+Author URI: http://everchangingmedia.com
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: standard
+*/
+
+/* ------------------------------------------------------------------------ Import Standard Styles */
+
+@import url( '../standard/style.css' );
+@import 'variables.less';
+@import 'mixins.less';
+
+/* ------------------------------------------------------------------------ Customizations */
+
+#site {
+	background: white;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: underline;
+	color: @gray;
+	&:hover {
+		color: @blue;
+	}
+}
+
+// Header
+
+#hgroup {
+	position: relative;
+	padding: 0px;
+	P {
+		margin: 10px 0 20px 0;
+	}
+}
+
+#site-title, #site-title a {
+	color: #515151;
+	&:hover {
+		color: @blue;
+	}
+}
+
+#site-description {
+	color: #757575;
+}
+
+.navbar-inverse .navbar-inner {
+	background-color: transparent;
+	background-image: none;
+	.no-shadow();
+	border-bottom: 1px solid #EDEDED;
+	border-top: 1px solid #EDEDED;
+}
+
+.navbar .nav {
+	> li > a {
+		text-transform: uppercase;
+		color: @gray;
+		font-size: 12px;
+		padding: 11px 20px 10px;
+		&:hover {
+			color: #5E5E5E;
+			background: none;
+			.no-shadow();
+		}
+	}
+	.active > a {
+		font-weight: bold;
+		background: none;
+		color: #515151;
+		.no-shadow();
+		&:hover {
+			background: none;
+			color: #515151;
+			.no-shadow();
+		}
+	}
+}
+
+.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+	&:hover {
+		background-color: transparent;	
+	}	
+}
+
+.breadcrumb {
+	background: none;
+}
+
+// Posts
+
+.post, #comments, #pings, #no-comments, #respond {
+	.no-shadow();
+	.double-border-bottom();
+}
+
+.post-title {
+	a {
+		color: @blue;
+		font-size: 22px;
+		font-weight: lighter;
+		text-decoration: none;
+		&:visited {
+			color: @blue;
+		}
+		&:hover {
+			color: black;
+		}
+	}
+}
+
+.post-header {
+	border-bottom: none;
+	.alignleft {
+		float: right;
+	}
+}
+
+.the-comment-link a {
+	text-decoration: underline;
+	color: #757575;
+	&:hover {
+		color: @blue;
+	}
+}
+
+.post-meta {
+	border-top: none;
+}
+
+.post {
+	&.format-link {
+		.post-title a {
+			color: @black;
+			&:hover {
+				color: @blue;
+			}
+		}
+		.post-header {
+			background: none;
+			background-image: none;
+			.entry-content {
+				background-image: url(../standard/images/icn-link-dark.png);
+			}
+		}
+	}
+	&.format-status {
+		.post-header {
+			background: none;
+			background-image: none;
+			.no-shadow();
+		}
+	}
+	&.format-quote { 
+		.post-header {
+			background-color: #D2E0F9;
+		}
+	}
+}
+
+.more-link {
+	color: @blue;
+	&:hover {
+		color: @black;
+	}
+}
+
+.pager {
+	li > a, li > span{
+		display:inline-block;
+		padding:5px 14px;
+		border: none;
+		color: @blue;
+		.rounded-corners(0px);
+		&:hover {
+			background: none;
+			color: @black;
+			text-decoration: underline;
+		}
+	}
+	a {
+		color: @blue;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.previous-page, .next-page {
+	a {
+		color: @blue;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#author-box {
+	.double-border-bottom();
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+
+.well {
+	background: none;
+	.no-shadow();
+}
+
+.widget {
+	h4.widget-title {
+		margin-bottom: 10px;
+		padding-bottom: 15px;
+		border-bottom: none;
+		font-size: 12px;
+		line-height: 12px;
+		color: darken(@gray, 5%);
+		text-transform: uppercase;
+	}
+	ul li a {
+		&:hover  {
+			color: @blue;
+		}
+	}
+}
+
+#footer {
+	background: none;
+	#sub-floor {
+		background: none;
+		#credit {
+			color: @gray;
+			a {
+				&:hover {
+					color: @blue;
+				}
+			}
+		}
+	}
+}
+
+code {
+color: @gray;
+background-color: transparent;
+border: none;
+}
+
+
+/* ------------------------------------------------------------------------ Media Queries */
+
+/* Smartphones */
+@media (max-width: 480px) {
+	#wrapper .container {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+}
+
+/* Tablet and Mobile */
+@media (max-width: 979px) {	
+	#site {
+		margin: 0px auto;
+	}
+	.navbar-inverse .navbar-inner {
+		border-bottom: none;
+		border-top: none;
+	}
+}
+
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+	#site {
+		margin: 0px auto;
+	}
+}
+
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+	#site {
+		margin: 0px auto;
+	}
+}
+
+/* Desktop */
+@media (min-width: 980px) {
+	#site {
+		margin: 40px auto;
+		padding: 40px;
+	}
+}
