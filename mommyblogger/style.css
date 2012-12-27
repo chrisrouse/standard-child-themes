@@ -1,4 +1,3 @@
-@import url('../standard/style.css');
 /*  
 Theme Name: Mommy Blogger Child Theme
 Theme URI: http://support.8bit.io/entries/20031561-customization-standard-mommy-blogger-standard-theme-2-6-0-2-6-1
@@ -11,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: standard
 */
 /* ------------------------------------------------------------------------ Import Standard Styles */
+@import url( '../../standard/style.css' );
 /* ------------------------------------------------------------------------ Customizations */
 /* Body */
 body {

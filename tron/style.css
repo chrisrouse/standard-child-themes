@@ -1,4 +1,3 @@
-@import url('../standard/style.css');
 /*  
 Theme Name: Tron Child Theme
 Theme URI: http://support.8bit.io/entries/437065-customization-tron-inspired-standard-theme-2-5-4
@@ -11,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: standard
 */
 /* ------------------------------------------------------------------------ Import Standard Styles */
+@import url( '../../standard/style.css' );
 /* ------------------------------------------------------------------------ Customizations */
 /* Body */
 body {

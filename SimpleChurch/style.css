@@ -1,0 +1,305 @@
+/*
+Theme Name: Simple Church
+Theme URI: http://demo.chrisrouse.us/SimpleChurchTheme
+Version: 1.1
+Description: This is a simple theme for churches to use. It is based on Standard Theme 3.
+Author: Chris Rouse
+Author URI: www.chrisrouse.us
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: standard
+*/
+
+/*
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\
+
+    1.  Import Standard styles
+    2.  Typography
+    3.  Main Styles
+    4.  Menu-Navigation
+    5.  Header
+    6. Posts
+    7. Page
+    8. Footer
+    9. Media Queries
+
+*/
+
+/* ------------------------------------------------------------------------ 1. Import Standard Styles */
+
+@import url( '../../standard/style.css' );
+@import url( '../standard/style.css' );
+
+
+/* ------------------------------------------------------------------------ 2. Typography */
+
+body, p, input, button, select, textarea {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+#respond #comment-form-comment textarea, #comment-form-share-text-padder textarea {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.post-title {
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------ 3. Main Styles */
+
+html {
+    overflow-y: scroll;
+    background: #ffffff;
+}
+
+#header {
+    background: #fff url(images/stripe.png) fixed repeat left top;
+}
+
+body {
+    background: #ffffff;
+}
+
+#wrapper {
+    padding: 40px 0px;
+    background: none repeat scroll 0 0 white;
+}
+
+/* ------------------------------------------------------------------------ 4. Menu-Navigation */
+
+.navbar div > ul a {
+    margin-top: 4px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.navbar .nav > li > a {
+    text-shadow: none !important;
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    background-color: transparent !important;
+    color: #000000 !important;
+}
+
+.navbar-inner {
+    border-bottom: 1px solid #EEEEEE;
+    box-shadow: none;
+}
+
+.navbar-inner, .navbar .fill {
+    margin-bottom: -20px;
+    background: #ffffff;
+    background-color: #ffffff;
+    background-image: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ffffff');
+}
+
+#menu-above-header a:hover, #menu-under-header a:hover {
+     color: #000000 !important;
+}
+
+/* ------------------------------------------------------------------------ 5. Header */
+
+#head-wrapper #hgroup {
+    padding: 25px 0 15px;
+    height: 42px; /* Height should be equal to height of header image. */
+}
+
+#site-title, #site-title a {
+    color: #E0E0E0;
+}
+
+#site-title a:hover, #site-title a:focus, #site-title a:active {
+    color: #ffffff;
+}
+
+#site-description {
+    color: #999999;
+}
+
+/* ------------------------------------------------------------------------ 6. Posts */
+
+.post, #comments, #pings, #no-comments, #respond {
+    box-shadow: none;
+}
+
+.post-header {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.post-meta {
+    padding: 10px 0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.post .entry-content, .post .entry-summary {
+    padding: 0;
+}
+
+blockquote p {
+    color: #777777;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22.5px;
+}
+
+.entry-content .wp-caption img {
+    max-width: 100%;
+    height: auto;
+}
+
+p.wp-caption-text {
+    margin-bottom: 0;
+    border: 1px solid;
+    border: 1px solid #EEEEEE;
+    border-radius: 0;
+    background-color: #F8F8F8;
+    color: #888888;
+    font-size: 11px;
+}
+
+.entry-content .wp-caption {
+    padding: 0px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+/* Video Post Type */
+
+.format-video .entry-content > * {
+    margin: 0
+}
+
+/* Link Post Type */
+
+.post.format-link .post-header {
+    padding-top: 20px;
+}
+
+/* Status Post Type */
+
+.post.format-status .post-header {
+    padding: 10px 10px 0;
+}
+
+/* Quote Post Type */
+
+.post.format-quote .post-header {
+    padding: 10px 10px 30px;
+}
+
+.post.format-quote .post-header .entry-content p {
+    font-size: 20px;
+    text-shadow: none;
+}
+
+/* Other post styles */
+
+#pings, #no-comments {
+    padding: 0px;
+}
+
+/* comment input */
+
+#respond {
+    padding: 0px;
+}
+
+
+/* Sticky Posts */
+
+.sticky {
+	background: #fff;
+	margin: 0 0 20px 0;
+	position: relative;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+	-moz-box-shadow: inset	0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+
+
+/* ------------------------------------------------------------------------ 7. Page */
+
+.page .post-header {
+    display: none;
+}
+
+.page .breadcrumb {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------ 8. Footer */
+
+#footer-widgets h4.widget-title {
+    color: #E0E0E0;
+    text-align: center;
+}
+
+#footer-widgets {
+    background: url("images/stripe.png") repeat scroll 0 0 transparent;
+    color: #999999;
+}
+
+#footer #footer-widgets {
+    padding-top: 10px ;
+}
+
+#footer-widgets .si-total, #footer-widgets .si-individual {
+    border: none;
+    box-shadow: 0px 0px 0px black;
+    padding: 10px 0 8px;
+    text-align: center;
+    text-shadow: none;
+    background: rgba(22,22,22,0.25);
+}
+
+#footer-widgets .si-total-number, #footer-widgets .si-total-title, #footer-widgets .si-individual a {
+    color: #E0E0E0;
+}
+
+/* ------------------------------------------------------------------------ 9. Media Queries */
+
+/* Smartphones */
+@media (max-width: 480px) {
+
+}
+
+/* Tablet and Mobile */
+@media (max-width: 979px) {
+
+}
+
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Desktop */
+@media (min-width: 980px) {
+
+}

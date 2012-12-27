@@ -1,0 +1,184 @@
+/* -- General Styles -- */
+h2 {
+  font-weight: normal;
+}
+.textwidget {
+  min-height: 100px;
+}
+code {
+  background-color: #fee9cc;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 1px 3px;
+}
+#site-title {
+  color: #fff !important;
+  margin-top: 2px;
+}
+#site-title a {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: normal;
+}
+#site-title a:hover {
+  color: #ccc;
+}
+.post-title {
+  font-weight: 400;
+}
+.post p {
+  line-height: 22px;
+}
+.entry-content h2 {
+  border-bottom: 1px solid #EEE;
+  line-height: 40px !important;
+}
+#site-title,
+#menu-above-header,
+#footer {
+  font-family: 'Droid Sans', Arial, sans-serif;
+}
+#menu-above-header {
+  margin-bottom: 40px;
+}
+/* -- Quote Post Format -- */
+.post.format-quote .post-title {
+  border-bottom: 0;
+  margin-bottom: 0px;
+}
+.post.format-quote .post-header {
+  background-color: #000;
+  background-image: url(../images/bg-quote.png);
+}
+.post.format-quote .post-header .entry-content {
+  background-image: url(../images/icn-quote.png);
+}
+.post.format-quote .post-header .entry-content p {
+  font-style: normal;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  margin-top: -4px;
+}
+/* -- Link Post Format -- */
+.post.format-link a {
+  font-weight: 200;
+}
+.post.format-link .post-header .post-title {
+  margin-top: -4px;
+}
+.post.format-link .post-header .entry-content {
+  padding-left: 50px;
+}
+#standard-post-advertisement .widget {
+  margin-bottom: 0;
+}
+#standard-post-advertisement .widget .textwidget {
+  min-height: 60px !important;
+}
+.format-link .post-header {
+  height: 50px;
+}
+.entry-content.link-description {
+  margin-top: 20px;
+}
+/* -- Comments -- */
+#commentform #comment-form-avatar {
+  margin-right: 10px;
+}
+#no-comments .title {
+  font-weight: normal;
+}
+/* -- Google Custom Search -- */
+#cse-search-results iframe {
+  min-height: 1080px;
+  height: 1370px;
+}
+/* -- Pressed Ads -- */
+.pa-image {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 2px;
+}
+.pa-copy {
+  float: left;
+  font-size: 12px;
+  line-height: 18px;
+  width: 150px;
+  color: #000;
+  text-decoration: none;
+}
+.pa-id {
+  float: left;
+  font-size: 12px;
+  line-height: 18px;
+  width: 150px;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+.pa-id a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+/* -- Syntax Highlighter -- */
+body .syntaxhighlighter code,
+body body .syntaxhighlighter .gutter {
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
+}
+/* -- PayPal Donate -- */
+.entry-content form#paypal {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: -35px;
+}
+/* -- Stripe Donate -- */
+#wp-stripe-types {
+  width: 100% !important;
+  background-position: center !important;
+}
+/* -- Social Sharers -- */
+.sharedaddy .sd-sharing {
+  border: 0 !important;
+  margin-left: -100px !important;
+}
+/* -- Single Post Message -- */
+.single-post-message {
+  margin-bottom: 20px !important;
+}
+/* ------------------------------------------------------------------------ Parametric Mixins */
+/* ------------------------------------------------------------------------ Media Queries */
+/* Smartphones */
+@media (max-width: 480px) {
+  #site-title {
+    display: none;
+  }
+  #social-networking .social-icons {
+    margin-top: 3px;
+  }
+}
+/* Tablet and Mobile */
+@media (max-width: 979px) {
+  #site-title {
+    margin-left: 4px;
+    margin-top: -6px;
+  }
+}
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+  #site-title {
+    margin-left: 4px;
+    margin-top: -6px;
+  }
+  #site-title .brand {
+    margin-top: -4px;
+  }
+}
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+  #site-title {
+    margin-left: 4px;
+    margin-top: -6px;
+  }
+}

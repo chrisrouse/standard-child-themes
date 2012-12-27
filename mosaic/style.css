@@ -1,4 +1,3 @@
-@import url('../standard/style.css');
 /*  
 Theme Name: Mosaic Child Theme
 Theme URI: http://support.8bit.io/entries/379992-customization-mosaic-standard-theme-2-0
@@ -11,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: standard
 */
 /* ------------------------------------------------------------------------ Import Standard Styles */
+@import url( '../../standard/style.css' );
 /* ------------------------------------------------------------------------ Customizations */
 /* Body */
 body {

@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.12 ( September 4th, 2012 )
+
+* Adjusting styles for the post format and the link post format
+* Converting editor-style.css to LESS
+* Updating editor-style.css to match the front end styles
+
+## 0.11 ( August 17th, 2012 )
+
+* Adding a border style to h2 in the content
+* Moving styles to LESS and importing in base stylesheet
+
+## 0.10 ( August 15th, 2012 )
+
+* Updating styles for code
+* Updating header font weights
+* Adding additional margins for Single Post Message support
+* Moving the margin of the site title
+
+## 0.9 ( August 11th, 2012 )
+
+* Updated positioning of social icons in mobile view
+* Updated positioning of brand element in mobile view
+
 ## 0.8 ( August 6th, 2012) 
 
 * Adding styles for PayPal and Stripe
