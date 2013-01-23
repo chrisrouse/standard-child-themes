@@ -1,8 +1,8 @@
 /*  
-Theme Name: Bootstrap 2.1
+Theme Name: Bootstrap 2.2
 Theme URI: https://github.com/eightbit/standard-child-theme-kit
-Version: 1.0
-Description: Bootstrap 2.1 Child Themem for Standard 3
+Version: 1.1
+Description: Bootstrap 2.2 Child Themem for Standard 3
 Author: Logos Creative
 Author URI: http://logos-creative.com
 License: GNU General Public License v2.0
@@ -11,7 +11,7 @@ Template: standard
 */
 
 @import url( '../../standard/style.css' );
-@import url( 'css/lib/font-awesome.css' );
+@import url( 'css/lib/font-awesome.min.css' );
 
 /* Media Queries */
 
