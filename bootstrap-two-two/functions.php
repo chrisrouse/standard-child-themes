@@ -1,6 +1,6 @@
 <?php
 
-/* Update to Bootstrap 2.2.1 */
+/* Update to Bootstrap 2.2.2 */
 
 function update_bootstrap() {
 
@@ -16,7 +16,7 @@ function update_bootstrap() {
 	wp_register_script( 'bootstrap-two', get_stylesheet_directory_uri() . '/js/lib/bootstrap.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'bootstrap-two' );
 
-	wp_register_style( 'font-awesome-ie', get_stylesheet_directory_uri() . '/css/lib/font-awesome-ie7.css' );
+	wp_register_style( 'font-awesome-ie', get_stylesheet_directory_uri() . '/css/lib/font-awesome-ie7.min.css' );
     $GLOBALS['wp_styles']->add_data( 'font-awesome-ie', 'conditional', 'lt IE 8' );
     wp_enqueue_style( 'font-awesome-ie' );
     	
@@ -58,7 +58,7 @@ function bs_collapse_func($atts, $content = null) {
 	);
 	
 	$idnum = rand(1,50);
-	$open == true ? $open = ' in' : $open = '';
+	$open === true ? $open = ' in' : $open = '';
 	$plusicon == true ? $plusicon = ' +' : $plusicon = '';
 	
 	$collapse_content = "<" . $element . "><a data-toggle='collapse' data-target='#coll" . $idnum . "' class='pointer'>" . $title . $plusicon . "</a></" . $element . "><div id='coll" . $idnum . "' class='collapse" . $open . "'>" . do_shortcode($content) . "</div>";
