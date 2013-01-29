@@ -1,7 +1,7 @@
 /*  
 Theme Name: Alliswell -bassed of jarederickson.com
 Theme URI: https://github.com/eightbit/standard-child-themes
-Version: 0.1
+Version: 0.2
 Description: minimal light theme based off jarederickson.com
 Author: Jared Erickson
 Author URI: http://jarederickson.com
@@ -69,7 +69,8 @@ a:hover {
 	top: 28px;
 }
 
-.navbar-inner, .navbar .fill {
+.navbar-inner, .navbar .fill, .navbar-fixed-top .navbar-inner {
+	background-image: none;
 	background: #fff;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
