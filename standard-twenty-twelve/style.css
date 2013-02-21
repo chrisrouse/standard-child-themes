@@ -94,6 +94,9 @@ a:hover {
 .navbar-inverse .nav-collapse .dropdown-menu a:hover {
   background-color: transparent;
 }
+.navbar .social-icons > li {
+margin: 0px;
+}
 .breadcrumb {
   background: none;
 }
@@ -251,6 +254,9 @@ code {
   .navbar-inverse .navbar-inner {
     border-bottom: none;
     border-top: none;
+  }
+  .social-icons.nav > li {
+	  margin-left: 0px;
   }
 }
 /* Mobile to Tablet */
