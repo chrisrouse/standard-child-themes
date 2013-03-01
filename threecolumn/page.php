@@ -24,7 +24,7 @@
 
 <div id="wrapper">
 	<div class="container">
-		<div class="row">
+		<div class="row-fluid">
 
 				<?php if ($has_left_sidebar) { ?>
 					<div class="sidebar span<?php echo ($has_right_sidebar) ? '3' : '4'?>">
@@ -64,7 +64,7 @@
 					</div>
 				<?php } ?>
 				
-		</div><!--/ row -->
+		</div><!--/row-fluid -->
 	</div><!--/container -->
 </div> <!-- /#wrapper -->
 <?php get_footer(); ?>

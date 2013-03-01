@@ -1,5 +1,5 @@
 @import url('../standard/style.css');
-/*  
+/*
 Theme Name: Three Column
 Theme URI: https://threecolumn.everchangingmedia.com
 Version: 3.2
@@ -11,12 +11,6 @@ License URI: http://www.gnu.org/liceZnses/gpl-2.0.html
 Template: standard
 */
 /* ------------------------------------------------------------------------ Import Standard Styles */
-/*  
-	Variables
-*/
-/*  
-	Mixins
-*/
 /* ------------------------------------------------------------------------ Customizations */
 .sidebar .widget {
   margin-bottom: 30px;
