@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.13 ( March 3rd, 2013 )
+
+* Setting post text to smaller file size
+* Removing the shadow from the site title
+* Removing Pressed Ads styles
+* Comments and cleaning up all LESS files
+* Removing `lib` directory
+* Removing PayPal donate styles (in favor of Stripe)
+* Updating the README
+
 ## 0.12 ( September 4th, 2012 )
 
 * Adjusting styles for the post format and the link post format
