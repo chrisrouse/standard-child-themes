@@ -37,7 +37,7 @@ code {
 		color: 			#fff !important;	
 		font-size: 		20px;
 		font-weight: 	normal;
-		text-shadow: 	0;
+		text-shadow: 	none !important;
 		
 		&:hover {
 			color: #ccc;
@@ -82,9 +82,33 @@ code {
 	font-family: 'Droid Sans', Arial, sans-serif;
 } // #site-title, #menu-above-header, #footer
 
-#menu-above-header {
-	margin-bottom: 	40px;
-} // #menu-above-header
+.navbar {
+
+	.navbar-inner {
+		height:	45px;
+	} // .navbar-inner
+
+	.nav {
+	
+		> li {
+			
+			> a {
+				text-shadow: none;
+			} // a
+			
+		} // li
+		
+	} // .navbar
+	
+} // .navbar
+
+.menu-header-container {
+	float:	left;
+} // .menu-header-container
+
+.standard-pi-bio {
+	font-size:	13px;
+} // .standard-pi-bio
 
 /* -- Quote Post Format -- */
 

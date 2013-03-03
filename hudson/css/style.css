@@ -1,12 +1,15 @@
 h2{font-weight:normal;}
 .textwidget{min-height:100px;}
 code{background-color:#fee9cc;color:rgba(0, 0, 0, 0.75);padding:1px 3px;}
-#site-title{color:#fff !important;margin-top:2px;}#site-title a{color:#fff !important;font-size:20px;font-weight:normal;text-shadow:0;}#site-title a:hover{color:#ccc;}
+#site-title{color:#fff !important;margin-top:2px;}#site-title a{color:#fff !important;font-size:20px;font-weight:normal;text-shadow:none !important;}#site-title a:hover{color:#ccc;}
 .post-title{font-weight:400;font-size:32px;}
 .post p{line-height:22px;font-size:14px;}
 .entry-content h2{border-bottom:1px solid #EEE;line-height:40px !important;}
 #site-title,#menu-above-header,#footer{font-family:'Droid Sans',Arial,sans-serif;}
-#menu-above-header{margin-bottom:40px;}
+.navbar .navbar-inner{height:45px;}
+.navbar .nav>li>a{text-shadow:none;}
+.menu-header-container{float:left;}
+.standard-pi-bio{font-size:13px;}
 .post.format-quote .post-title{border-bottom:0;margin-bottom:0px;}
 .post.format-quote .post-header{background-color:#000;background-image:url(../images/bg-quote.png);}.post.format-quote .post-header .entry-content{background-image:url(../images/icn-quote.png);}.post.format-quote .post-header .entry-content p{font-style:normal;color:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;margin-top:-4px;}
 .post.format-link a{font-weight:200;}
