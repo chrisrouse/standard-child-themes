@@ -5,6 +5,8 @@ code{background-color:#fee9cc;color:rgba(0, 0, 0, 0.75);padding:1px 3px;}
 .post-title{font-weight:400;font-size:32px;}
 .post p{line-height:22px;font-size:14px;}
 .entry-content h2{border-bottom:1px solid #EEE;line-height:40px !important;}
+.entry-content h3{font-weight:normal;font-size:20px;}
+.entry-content ol,.entry-content ul{font-size:14px;}
 #site-title,#menu-above-header,#footer{font-family:'Droid Sans',Arial,sans-serif;}
 .navbar .navbar-inner{height:45px;}
 .navbar .nav>li>a{text-shadow:none;}
@@ -23,6 +25,6 @@ code{background-color:#fee9cc;color:rgba(0, 0, 0, 0.75);padding:1px 3px;}
 #cse-search-results iframe{min-height:1080px;height:1370px;}
 body .syntaxhighlighter code,body body .syntaxhighlighter .gutter{font-family:Menlo,Monaco,"Courier New",monospace !important;}
 #wp-stripe-types{width:100% !important;background-position:center !important;}
-.sharedaddy .sd-sharing{border:0 !important;margin-left:-100px !important;}
+.sharedaddy{margin-left:-30px;}
 .single-post-message{margin-bottom:20px !important;}
-@media (max-width:480px){#site-title{display:none;} #social-networking .social-icons{margin-top:3px;}}@media (max-width:979px){#site-title{margin-left:4px;margin-top:-6px;}}@media only screen and (max-width:767px){#site-title{margin-left:4px;margin-top:-6px;} #site-title .brand{margin-top:-4px;}}@media (min-width:768px) and (max-width:979px){#site-title{margin-left:4px;margin-top:-6px;}}
+@media (max-width:480px){#site-title{display:none;} #social-networking .social-icons{margin-top:3px;} .sharedaddy{margin-left:-60px;}}@media (max-width:979px){#site-title{margin-left:4px;margin-top:-6px;}}@media only screen and (max-width:767px){#site-title{margin-left:4px;margin-top:-6px;} #site-title .brand{margin-top:-4px;}}@media (min-width:768px) and (max-width:979px){#site-title{margin-left:4px;margin-top:-6px;}}
