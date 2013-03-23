@@ -1,8 +1,10 @@
-# Bootstrap 2.2 Child Theme for Standard
+# Logos Child Theme for Standard
 
 ## Description
 
-Child theme kit using <a href="http://twitter.github.com/bootstrap" target="_blank">Bootstrap 2.2.2</a> and <a href="http://fortawesome.github.com/Font-Awesome" target="_blank">Font Awesome</a> for themes built on <a href="http://standardtheme.com" target="_blank">Standard 3</a>.
+Child theme kit for [Logos Creative](http://logos-creative.com) themes built on [Standard 3](http://standardtheme.com).
+
+What this *really* does is use Standard as a starting point. **All of Standard's styles and scripts are dequeued! Instead, the latest version of Bootstrap is loaded along with FitVids.js and Font Awesome.** You'll need to write your own styles. You can also uncomment the `@import` line in the `style.css` file if you just want to grab Standard's main CSS—and the same goes for some default WordPress image classes. Otherwise, remove the `wp_dequeue_style`/`wp_dequeue_script` calls in `functions.php` to get individual Standard styles back.
 
 ## Shortcodes
 
@@ -37,10 +39,13 @@ The following shows the available arguments/options along with the default setti
 ### Row: <a href="http://twitter.github.com/bootstrap/scaffolding.html" target="_blank">(Documentation)</a> ###
 
 ```[row fluid=false class=null][/row]```
+```[inner-row fluid=false class=null][/row]```
 
 ### Span: <a href="http://twitter.github.com/bootstrap/scaffolding.html" target="_blank">(Documentation)</a> ###
 
 ```[span width=12 offset=0 class=null][/span]```
+```[inner-span width=12 offset=0 class=null][/span]```
+```[inner-inner-span width=12 offset=0 class=null][/span]```
 
 ### Button Group: <a href="http://twitter.github.com/bootstrap/components.html#buttonGroups" target="_blank">(Documentation)</a> ###
 
