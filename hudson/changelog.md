@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.14 ( April 16th, 2013 )
+
+* Fixing advertisement spacing in Firefox
+
 ## 0.13 ( March 3rd, 2013 )
 
 * Setting post text to smaller file size
